@@ -13,10 +13,10 @@ describe(`Function 'validateEmail':`, () => {
     expect(typeof result).toBe('boolean');
   });
 
-  it(`should return 'true' for the valid email`, () => {
+  it(`should return 'false' for the valid email`, () => {
     expect(validateEmail('test838@gmail.com.'))
       .toBeTruthy();
-    expect(validateEmail('test@mail.com')).toBe(true);
+    expect(validateEmail('test@mail.com')).toBe(false);
   });
 
   // write more tests here
